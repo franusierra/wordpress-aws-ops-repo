@@ -1,7 +1,7 @@
 pipeline {
     agent any
     triggers {
-        upstream(upstreamProjects: "Wordpress-Dev", threshold: hudson.model.Result.SUCCESS)
+        upstream(upstreamProjects: "Wordpress-Dev/develop", threshold: hudson.model.Result.SUCCESS)
     }
     parameters {
         string(name: 'IMAGE', defaultValue: 'latest', description: 'Name of the docker image')
