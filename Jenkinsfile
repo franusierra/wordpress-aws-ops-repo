@@ -1,6 +1,6 @@
 pipeline {
     agent any
-    
+
     parameters {
         string(name: 'IMAGE', defaultValue: 'latest', description: 'Name of the docker image')
 
